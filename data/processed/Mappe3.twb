@@ -1,0 +1,312 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20261.26.0512.1636                               -->
+<workbook original-version='18.1' source-build='2026.1.2 (20261.26.0512.1636)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='ga4_merch_store_clean' inline='true' name='federated.0n70gxb1gqszic10yk2um0lrm3vq' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='ga4_merch_store_clean' name='textscan.0xl9gwm1o9tqdj1gmeqko1foe06a'>
+            <connection class='textscan' directory='D:/Neuefische/git-practice/EDA-google-merch-store/data/processed' filename='ga4_merch_store_clean.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0xl9gwm1o9tqdj1gmeqko1foe06a' name='ga4_merch_store_clean.csv' table='[ga4_merch_store_clean#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='de_DE'>
+            <column datatype='string' name='user_pseudo_id' ordinal='0' />
+            <column datatype='date' name='event_date' ordinal='1' />
+            <column datatype='string' name='traffic_medium' ordinal='2' />
+            <column datatype='string' name='traffic_source' ordinal='3' />
+            <column datatype='string' name='device_category' ordinal='4' />
+            <column datatype='integer' name='session_count' ordinal='5' />
+            <column datatype='integer' name='items_viewed' ordinal='6' />
+            <column datatype='integer' name='add_to_cart_count' ordinal='7' />
+            <column datatype='integer' name='checkout_started' ordinal='8' />
+            <column datatype='integer' name='purchases' ordinal='9' />
+            <column datatype='integer' name='converted' ordinal='10' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[ga4_merch_store_clean.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;de&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;de_DE&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>user_pseudo_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[user_pseudo_id]</local-name>
+            <parent-name>[ga4_merch_store_clean.csv]</parent-name>
+            <remote-alias>user_pseudo_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <object-id>[ga4_merch_store_clean.csv_2C0F87D8E6EF487CBB22452302E4032D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>event_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[event_date]</local-name>
+            <parent-name>[ga4_merch_store_clean.csv]</parent-name>
+            <remote-alias>event_date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ga4_merch_store_clean.csv_2C0F87D8E6EF487CBB22452302E4032D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>traffic_medium</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[traffic_medium]</local-name>
+            <parent-name>[ga4_merch_store_clean.csv]</parent-name>
+            <remote-alias>traffic_medium</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <object-id>[ga4_merch_store_clean.csv_2C0F87D8E6EF487CBB22452302E4032D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>traffic_source</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[traffic_source]</local-name>
+            <parent-name>[ga4_merch_store_clean.csv]</parent-name>
+            <remote-alias>traffic_source</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <object-id>[ga4_merch_store_clean.csv_2C0F87D8E6EF487CBB22452302E4032D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>device_category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[device_category]</local-name>
+            <parent-name>[ga4_merch_store_clean.csv]</parent-name>
+            <remote-alias>device_category</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <object-id>[ga4_merch_store_clean.csv_2C0F87D8E6EF487CBB22452302E4032D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>session_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[session_count]</local-name>
+            <parent-name>[ga4_merch_store_clean.csv]</parent-name>
+            <remote-alias>session_count</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ga4_merch_store_clean.csv_2C0F87D8E6EF487CBB22452302E4032D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>items_viewed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[items_viewed]</local-name>
+            <parent-name>[ga4_merch_store_clean.csv]</parent-name>
+            <remote-alias>items_viewed</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ga4_merch_store_clean.csv_2C0F87D8E6EF487CBB22452302E4032D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>add_to_cart_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[add_to_cart_count]</local-name>
+            <parent-name>[ga4_merch_store_clean.csv]</parent-name>
+            <remote-alias>add_to_cart_count</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ga4_merch_store_clean.csv_2C0F87D8E6EF487CBB22452302E4032D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>checkout_started</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[checkout_started]</local-name>
+            <parent-name>[ga4_merch_store_clean.csv]</parent-name>
+            <remote-alias>checkout_started</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ga4_merch_store_clean.csv_2C0F87D8E6EF487CBB22452302E4032D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>purchases</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[purchases]</local-name>
+            <parent-name>[ga4_merch_store_clean.csv]</parent-name>
+            <remote-alias>purchases</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ga4_merch_store_clean.csv_2C0F87D8E6EF487CBB22452302E4032D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>converted</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[converted]</local-name>
+            <parent-name>[ga4_merch_store_clean.csv]</parent-name>
+            <remote-alias>converted</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ga4_merch_store_clean.csv_2C0F87D8E6EF487CBB22452302E4032D]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='ga4_merch_store_clean.csv' datatype='table' name='[__tableau_internal_object_id__].[ga4_merch_store_clean.csv_2C0F87D8E6EF487CBB22452302E4032D]' role='measure' type='quantitative' />
+      <column caption='Add To Cart Count' datatype='integer' name='[add_to_cart_count]' role='measure' type='quantitative' />
+      <column caption='Checkout Started' datatype='integer' name='[checkout_started]' role='measure' type='quantitative' />
+      <column caption='Converted' datatype='integer' name='[converted]' role='measure' type='quantitative' />
+      <column caption='Device Category' datatype='string' name='[device_category]' role='dimension' type='nominal' />
+      <column caption='Event Date' datatype='date' name='[event_date]' role='dimension' type='ordinal' />
+      <column caption='Items Viewed' datatype='integer' name='[items_viewed]' role='measure' type='quantitative' />
+      <column caption='Purchases' datatype='integer' name='[purchases]' role='measure' type='quantitative' />
+      <column caption='Session Count' datatype='integer' name='[session_count]' role='measure' type='quantitative' />
+      <column caption='Traffic Medium' datatype='string' name='[traffic_medium]' role='dimension' type='nominal' />
+      <column caption='Traffic Source' datatype='string' name='[traffic_source]' role='dimension' type='nominal' />
+      <column caption='User Pseudo Id' datatype='string' name='[user_pseudo_id]' role='dimension' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Deutschland&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='ga4_merch_store_clean.csv' id='ga4_merch_store_clean.csv_2C0F87D8E6EF487CBB22452302E4032D'>
+            <properties context=''>
+              <relation connection='textscan.0xl9gwm1o9tqdj1gmeqko1foe06a' name='ga4_merch_store_clean.csv' table='[ga4_merch_store_clean#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='de_DE'>
+                  <column datatype='string' name='user_pseudo_id' ordinal='0' />
+                  <column datatype='date' name='event_date' ordinal='1' />
+                  <column datatype='string' name='traffic_medium' ordinal='2' />
+                  <column datatype='string' name='traffic_source' ordinal='3' />
+                  <column datatype='string' name='device_category' ordinal='4' />
+                  <column datatype='integer' name='session_count' ordinal='5' />
+                  <column datatype='integer' name='items_viewed' ordinal='6' />
+                  <column datatype='integer' name='add_to_cart_count' ordinal='7' />
+                  <column datatype='integer' name='checkout_started' ordinal='8' />
+                  <column datatype='integer' name='purchases' ordinal='9' />
+                  <column datatype='integer' name='converted' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Blatt 1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{246C4217-DC2A-4E76-BDA2-08C08C32C223}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' maximized='true' name='Blatt 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9081FC6F-2016-45C3-AA94-4D80767A1170}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Blatt 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABYlAAAWJQFJUiTw
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
